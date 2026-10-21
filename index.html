@@ -1,0 +1,131 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="theme-color" content="#10251f">
+<title>Our Wedding | Wedding Album</title>
+<style>
+:root{--green:#10251f;--green2:#1d3b31;--gold:#d9b875;--cream:#fbf6ec;--muted:#d7d1c4}
+*{box-sizing:border-box}html{scroll-behavior:smooth}body{margin:0;background:var(--green);color:var(--cream);font-family:Georgia,'Times New Roman',serif}
+a{color:inherit}.hero{min-height:92vh;display:grid;place-items:center;text-align:center;padding:48px 20px;position:relative;overflow:hidden;background:linear-gradient(180deg,rgba(8,24,19,.28),rgba(8,24,19,.92)),url('assets/photos/cover.jpg') center/cover no-repeat}
+.hero:before{content:"";position:absolute;inset:18px;border:1px solid rgba(217,184,117,.6);pointer-events:none}
+.hero-inner{position:relative;max-width:800px}.eyebrow{letter-spacing:.28em;text-transform:uppercase;color:var(--gold);font:12px Arial,sans-serif}.hero h1{font-size:clamp(3rem,9vw,6.7rem);font-weight:400;line-height:.95;margin:25px 0}.amp{color:var(--gold);font-style:italic}.date{font:14px Arial,sans-serif;letter-spacing:.2em}.btn{border:1px solid var(--gold);color:var(--cream);background:transparent;padding:12px 18px;cursor:pointer;text-decoration:none;display:inline-block;margin:8px 5px;font:12px Arial,sans-serif;letter-spacing:.1em;text-transform:uppercase}.btn:hover{background:var(--gold);color:var(--green)}header{position:sticky;top:0;z-index:5;background:rgba(16,37,31,.95);backdrop-filter:blur(10px);border-bottom:1px solid #ffffff18;display:flex;justify-content:center;flex-wrap:wrap;gap:6px;padding:10px}header a{font:11px Arial,sans-serif;letter-spacing:.1em;text-transform:uppercase;text-decoration:none;padding:10px;color:var(--muted)}section{padding:70px 20px;max-width:1100px;margin:auto}.section-title{text-align:center;font-weight:400;font-size:clamp(2rem,5vw,3rem);margin:0 0 12px}.subtitle{text-align:center;color:var(--gold);font:11px Arial,sans-serif;letter-spacing:.2em;text-transform:uppercase;margin-bottom:35px}.intro{text-align:center;max-width:680px;margin:auto;color:var(--muted);font-size:1.1rem;line-height:1.8}.countdown{display:flex;justify-content:center;gap:18px;flex-wrap:wrap;margin:28px 0}.countdown div{min-width:76px;text-align:center;border:1px solid #d9b87555;padding:14px}.countdown strong{display:block;font-size:2rem;color:var(--gold);font-weight:400}.countdown span{font:10px Arial,sans-serif;letter-spacing:.12em;text-transform:uppercase}.grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(190px,1fr));gap:12px}.photo{position:relative;aspect-ratio:4/5;background:#29443a;overflow:hidden}.photo img{width:100%;height:100%;object-fit:cover;display:block;transition:transform .4s}.photo:hover img{transform:scale(1.04)}.photo figcaption{position:absolute;bottom:0;left:0;right:0;padding:25px 12px 12px;background:linear-gradient(transparent,#0009);font-size:14px}.reels{display:grid;grid-template-columns:repeat(auto-fit,minmax(220px,1fr));gap:14px}.reels video{width:100%;max-height:540px;aspect-ratio:9/16;background:#000;object-fit:cover}.wall{max-width:650px;margin:auto}.wall form{display:grid;gap:12px}.wall input,.wall textarea{width:100%;padding:13px;background:#ffffff0b;border:1px solid #d9b87566;color:var(--cream);font:15px Georgia,serif}.wall textarea{min-height:95px;resize:vertical}.messages{display:grid;gap:12px;margin-top:25px}.message{padding:16px;border:1px solid #d9b87544;background:#ffffff05}.message strong{color:var(--gold)}.note{font:12px Arial,sans-serif;color:#bfb8aa;line-height:1.6}.footer{text-align:center;border-top:1px solid #ffffff20;padding:32px 15px;color:var(--muted);font:11px Arial,sans-serif;letter-spacing:.12em}.music-btn{position:fixed;right:15px;bottom:15px;z-index:8;border-radius:30px;background:var(--gold);color:var(--green);border:0;padding:13px 16px;cursor:pointer;font:12px Arial,sans-serif}
+@media(max-width:600px){section{padding:52px 16px}.hero{min-height:82vh}header{gap:0}header a{padding:9px 7px;font-size:10px}}
+</style>
+</head>
+<body>
+<section class="hero" id="home" style="max-width:none">
+  <div class="hero-inner">
+    <div class="eyebrow">Together with our families</div>
+    <h1><span id="brideHero">Bride Name</span><br><span class="amp">&</span><br><span id="groomHero">Groom Name</span></h1>
+    <p class="date" id="weddingDateHero">DECEMBER 20, 2026 · KERALA</p>
+    <p style="color:#e9e1d3;line-height:1.8">A beautiful new chapter begins. Join us as we celebrate love, family and forever.</p>
+    <a class="btn" href="#album">Explore our memories</a>
+    <a class="btn" href="#details">Wedding details</a>
+  </div>
+</section>
+<header>
+  <a href="#details">The Day</a><a href="#album">Album</a><a href="#reels">Reels</a><a href="#wall">Guest Wall</a>
+</header>
+<section id="details">
+  <h2 class="section-title">Save the Date</h2><div class="subtitle">A day to remember</div>
+  <p class="intro" id="introText">With grateful hearts, we invite you to celebrate our wedding. Your presence will make our day even more special.</p>
+  <div class="countdown" id="countdown"><div><strong>—</strong><span>Days</span></div><div><strong>—</strong><span>Hours</span></div><div><strong>—</strong><span>Minutes</span></div><div><strong>—</strong><span>Seconds</span></div></div>
+  <p class="intro"><strong style="color:var(--gold)" id="eventName">Wedding Ceremony</strong><br><span id="eventDate">20 December 2026 · 11:00 AM</span><br><span id="venue">Your venue name, Kerala</span></p>
+  <p style="text-align:center;margin-top:24px"><a class="btn" id="mapLink" href="https://maps.google.com" target="_blank" rel="noopener">Open location map</a></p>
+</section>
+<section id="album">
+  <h2 class="section-title">Our Wedding Album</h2><div class="subtitle">Little moments, forever memories</div>
+  <div class="grid" id="photoGrid">
+    <figure class="photo"><img src="assets/photos/photo1.jpg" alt="Wedding memory 1" onerror="this.style.display='none'"><figcaption>Our favourite moments</figcaption></figure>
+    <figure class="photo"><img src="assets/photos/photo2.jpg" alt="Wedding memory 2" onerror="this.style.display='none'"><figcaption>A day full of love</figcaption></figure>
+    <figure class="photo"><img src="assets/photos/photo3.jpg" alt="Wedding memory 3" onerror="this.style.display='none'"><figcaption>Forever starts here</figcaption></figure>
+    <figure class="photo"><img src="assets/photos/photo4.jpg" alt="Wedding memory 4" onerror="this.style.display='none'"><figcaption>Memories with family</figcaption></figure>
+  </div>
+  <p class="note" style="text-align:center;margin-top:18px">Replace the sample image files in <code>assets/photos/</code> with your own photos, keeping the same filenames.</p>
+</section>
+<section id="reels">
+  <h2 class="section-title">Wedding Reels</h2><div class="subtitle">Watch our moments</div>
+  <div class="reels">
+    <video controls playsinline preload="metadata" poster="assets/photos/reel-cover1.jpg"><source src="assets/reels/reel1.mp4" type="video/mp4">Your browser does not support video.</video>
+    <video controls playsinline preload="metadata" poster="assets/photos/reel-cover2.jpg"><source src="assets/reels/reel2.mp4" type="video/mp4">Your browser does not support video.</video>
+  </div>
+  <p class="note" style="text-align:center;margin-top:18px">Add your MP4 videos as <code>reel1.mp4</code> and <code>reel2.mp4</code> in <code>assets/reels/</code>.</p>
+</section>
+<section id="wall">
+  <h2 class="section-title">Guest Wall</h2><div class="subtitle">Leave a little love</div>
+  <div class="wall">
+    <form id="guestForm">
+      <input id="guestName" maxlength="50" placeholder="Your name" required>
+      <textarea id="guestMessage" maxlength="400" placeholder="Write your wishes for the couple…" required></textarea>
+      <button class="btn" type="submit">Post wishes on this device</button>
+    </form>
+    <div class="messages" id="messages"></div>
+    <p class="note">Demo limitation: messages are saved only in this browser/device. GitHub Pages is static hosting, so shared guest posts and visitor photo uploads need a database or backend service. Do not enter private information here.</p>
+  </div>
+</section>
+<footer class="footer">MADE WITH LOVE · <span id="footerNames">BRIDE & GROOM</span></footer>
+<audio id="bgMusic" loop><source src="assets/music/music.mp3" type="audio/mpeg"></audio>
+<button class="music-btn" id="musicToggle" type="button">♫ Play music</button>
+<script>
+// EDIT THESE DETAILS
+const wedding = {
+  bride: "Bride Name",
+  groom: "Groom Name",
+  date: "2026-12-20T11:00:00",
+  dateLabel: "DECEMBER 20, 2026 · KERALA",
+  eventDateLabel: "20 December 2026 · 11:00 AM",
+  venue: "Your venue name, Kerala",
+  mapUrl: "https://maps.google.com/?q=Kerala"
+};
+document.title = `${wedding.bride} & ${wedding.groom} | Wedding`;
+document.getElementById("brideHero").textContent = wedding.bride;
+document.getElementById("groomHero").textContent = wedding.groom;
+document.getElementById("weddingDateHero").textContent = wedding.dateLabel;
+document.getElementById("eventDate").textContent = wedding.eventDateLabel;
+document.getElementById("venue").textContent = wedding.venue;
+document.getElementById("mapLink").href = wedding.mapUrl;
+document.getElementById("footerNames").textContent = `${wedding.bride} & ${wedding.groom}`.toUpperCase();
+
+const countdown = document.getElementById("countdown");
+function updateCountdown(){
+  const target = new Date(wedding.date).getTime(), now = Date.now(), diff = target-now;
+  if (!Number.isFinite(target)) return;
+  if (diff <= 0){ countdown.innerHTML = '<p class="intro">Today is the day — let the celebration begin!</p>'; return; }
+  const vals = [Math.floor(diff/86400000),Math.floor(diff%86400000/3600000),Math.floor(diff%3600000/60000),Math.floor(diff%60000/1000)];
+  const labels = ["Days","Hours","Minutes","Seconds"];
+  countdown.innerHTML = vals.map((v,i)=>`<div><strong>${v}</strong><span>${labels[i]}</span></div>`).join("");
+}
+updateCountdown(); setInterval(updateCountdown,1000);
+
+const audio = document.getElementById("bgMusic"), musicToggle = document.getElementById("musicToggle");
+musicToggle.addEventListener("click", async()=>{
+  if(audio.paused){try{await audio.play();musicToggle.textContent="♫ Pause music";}catch(e){musicToggle.textContent="Add music.mp3 first";}}
+  else{audio.pause();musicToggle.textContent="♫ Play music";}
+});
+
+// Guest messages are local to the current browser only (not shared between visitors).
+const form = document.getElementById("guestForm"), messages = document.getElementById("messages");
+function renderMessages(){
+  let items=[]; try{items=JSON.parse(localStorage.getItem("weddingGuestMessages")||"[]")}catch(e){}
+  messages.innerHTML="";
+  items.slice().reverse().forEach(item=>{
+    const card=document.createElement("div"); card.className="message";
+    const name=document.createElement("strong"); name.textContent=item.name;
+    const body=document.createElement("p"); body.textContent=item.message; body.style.marginBottom="0";
+    card.append(name,body); messages.append(card);
+  });
+}
+form.addEventListener("submit",e=>{
+  e.preventDefault();
+  const name=document.getElementById("guestName").value.trim(), message=document.getElementById("guestMessage").value.trim();
+  if(!name||!message)return;
+  let items=[]; try{items=JSON.parse(localStorage.getItem("weddingGuestMessages")||"[]")}catch(e){}
+  items.push({name,message}); localStorage.setItem("weddingGuestMessages",JSON.stringify(items));
+  form.reset(); renderMessages();
+});
+renderMessages();
+</script>
+</body>
+</html>
